@@ -1,51 +1,68 @@
 # sBTC Payment Links
 
-A simple tool for generating payment requests as URLs, allowing businesses and individuals to request payments in sBTC via messaging, email, or social media.
+Generate shareable payment request URLs for sBTC transactions. Perfect for invoices, donations, or any Bitcoin payment needs.
 
-## Features
+## 🚀 Features
 
-- 🔗 Generate payment request URLs with custom amounts and messages
-- 📱 QR code generation for easy mobile payments
-- 💼 Business-friendly interface for invoice generation
-- 🔄 Real-time URL preview and validation
-- 📧 Easy sharing via email, messaging, and social media
-- ⚡ Built with Next.js and Stacks Connect for sBTC integration
+- **Generate Payment Links**: Create shareable URLs with custom amounts and messages
+- **QR Code Support**: Generate QR codes for easy mobile payments
+- **Real-time Validation**: Address validation with Stacks API integration
+- **Wallet Integration**: Support for Leather, Xverse, and other Stacks wallets
+- **Mock Testing**: Development mode with mock payments for testing
 
-## Getting Started
+## 🛠️ Technology Stack
 
-First, install the dependencies:
+- **Next.js 15** - React framework with App Router
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first styling
+- **Stacks.js** - Stacks blockchain integration
+- **Lucide React** - Beautiful icons
+
+## 🌐 Live Demo
+
+Visit the live application: [https://your-app.vercel.app](https://your-app.vercel.app)
+
+## 📦 Installation
 
 ```bash
 npm install
-# or
-yarn install
+npm run dev
 ```
 
-Then, run the development server:
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 🔧 Configuration
+
+The app works out of the box with mainnet Stacks configuration. For development:
+
+- Mock wallet connections are available in development mode
+- Test addresses are provided for validation testing
+- Real wallet integration requires compatible browser extensions
+
+## 📱 Usage
+
+1. **Create Payment Request**: Fill in amount, recipient address, and optional details
+2. **Generate Link**: Get a shareable URL with payment information
+3. **Share**: Send via email, messaging, or social media
+4. **Pay**: Recipients can connect their wallet and complete payment
+
+## 🔐 Security
+
+- All payment data is encoded in URLs (no server storage)
+- Address validation using official Stacks APIs
+- Wallet connections use standard Stacks Connect protocols
+- No private keys are ever handled by the application
+
+## 🚀 Deployment
+
+This project is optimized for Vercel deployment:
 
 ```bash
-npm run dev
-# or
-yarn dev
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Deploy to Vercel with one click or using the Vercel CLI.
 
-## How It Works
+## 📄 License
 
-1. **Enter Payment Details**: Specify the sBTC amount, recipient address, and optional message
-2. **Generate Link**: The tool creates a shareable URL with encoded payment information
-3. **Share**: Send the link via any communication method
-4. **Pay**: Recipients click the link to initiate the sBTC transaction
-
-## Tech Stack
-
-- **Frontend**: Next.js 14, React, TypeScript
-- **Styling**: Tailwind CSS
-- **Blockchain**: Stacks Connect, sBTC
-- **QR Codes**: qrcode library
-- **Icons**: Lucide React
-
-## License
-
-MIT License
+MIT License - see LICENSE file for details.
